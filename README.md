@@ -1,5 +1,4 @@
-## Please like my repo and add credits if you end up cloning my portfolio or take inspiration from it.
-
+## If you end up forking my repo or derive inspiration from it, please make sure to give me credits by attributing it back to https://bhavya-ahir.github.io/portfolio/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

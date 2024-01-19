@@ -1,4 +1,4 @@
-## Please like my repo and add credits if you end up cloning my portfolio or take inspiration from it
+## Please like my repo and add credits if you end up cloning my portfolio or take inspiration from it.
 
 # Getting Started with Create React App
 

@@ -1,3 +1,5 @@
+#Please like my repo and add credits if you end cloning my portfolio or take inspiration from it
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

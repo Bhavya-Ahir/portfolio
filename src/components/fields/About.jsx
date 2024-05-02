@@ -6,55 +6,39 @@ const About = () => {
       id="about"
       className="p-[50px] md:pl-[100px] md:pr-[50px] md:py-[100px]"
     >
-      <h2 id="about-title" class="font-bold uppercase pb-[20px] text-[#01e2c7]">About</h2>   
-      <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-        Back in 2020, I worked on a project related to algorithmic trading,
-        which introduced me to the fintech field—a passion I've held since. I
+      <h2 id="about-title" className="font-bold uppercase pb-[20px] text-[#01e2c7]">
+        About
+      </h2>
+      <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+        Back in 2020, I worked on a project related to <span className="font-bold text-slate-200">algorithmic trading</span>,
+        which introduced me to the <span className="font-bold text-slate-200">fintech field</span>—a passion I've held since. I
         began my career as a software developer for
-        <a> </a>
-        <a
-          class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+        <a 
+          className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
           href="https://www.jpmorganchase.com/"
           target="_blank"
           rel="noreferrer"
         >
           JPMorgan & Chase's
         </a>
-        <a> </a>
         regulatory tech team, expanding my exposure and understanding of
         fintech. Fast-forward to today, I am pursuing a master's in
-        <a> </a>
-        <a
-          class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Computer science
-        </a>
-        <a> </a>
+        <span className="font-bold text-teal-300"> Computer Science</span>
         with a minor in
-        <a> </a>
-        <a
-          class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-          target="_blank"
-          rel="noreferrer"
-        >
-          financial mathematics
-        </a>
-        <a> </a>, a decision driven by my eagerness to delve profoundly into
-        this field.
+        <span className="font-bold text-teal-300"> Financial Mathematics</span>, a decision driven by my eagerness to delve profoundly into this
+        field.
       </p>
-      <br></br>
 
-      <p class="mb-4 class=mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-        My primary focus nowadays revolves around augmenting my knowledge of
-        financial products and furthering my grasp of computer science
-        fundamentals. In my free time, I also try to contribute to open source.
+      <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+        My current focus is on expanding my understanding of various technology sectors and strengthening my <span className="font-bold text-teal-300">computer science fundamentals</span>. I also
+        dedicate time to contributing to <span className="font-bold text-slate-200">open-source projects</span>, which helps me
+        stay connected with the global tech community and continuously improve
+        my coding skills.
       </p>
-      <br></br>
-      <p class="mb-4 class=mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+
+      <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
         When I’m not at the computer, I’m usually trekking, spending time with
-        my friends, or watching Formula One.
+        my friends, or watching <span className="font-bold text-teal-300">Formula One</span>.
       </p>
     </div>
   );

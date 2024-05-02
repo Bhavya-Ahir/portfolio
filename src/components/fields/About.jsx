@@ -12,18 +12,16 @@ const About = () => {
       <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
         Back in 2020, I worked on a project related to <span className="font-bold text-slate-200">algorithmic trading</span>,
         which introduced me to the <span className="font-bold text-slate-200">fintech field</span>—a passion I've held since. I
-        began my career as a software developer for
-        <a 
+        began my career as a software developer for <a 
           className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
           href="https://www.jpmorganchase.com/"
           target="_blank"
           rel="noreferrer"
         >
-          JPMorgan & Chase's
-        </a>
-        regulatory tech team, expanding my exposure and understanding of
+           JPMorgan & Chase's 
+        </a> regulatory tech team, expanding my exposure and understanding of
         fintech. Fast-forward to today, I am pursuing a master's in
-        <span className="font-bold text-teal-300"> Computer Science</span>
+        <span className="font-bold text-teal-300"> Computer Science </span>
         with a minor in
         <span className="font-bold text-teal-300"> Financial Mathematics</span>, a decision driven by my eagerness to delve profoundly into this
         field.

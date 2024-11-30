@@ -15,46 +15,58 @@ const Experience = () => {
       </h2>
 
       <ExperienceCard
+        timeline="June 2024 - Present"
+        role="Software Engineer Intern"
+        name="LexisNexis"
+        description={[
+          <>
+          Developed an IntelliJ plugin with embedded Python scripts that automated the migration of Eclipse-based Ant projects to
+          IntelliJ. Adopted by 5 teams, this tool facilitated a seamless transition and enhanced development efficiency.
+          </>,
+          <>
+          Automating the conversion of {" "}<span className="font-medium text-slate-200">Ant</span>{" "}
+          -based projects to{" "}
+            <span className="font-medium text-slate-200">
+            Gradle 
+            </span>{" "}using Python scripts, enabling the migration of over 75
+          repositories from Ant to Gradle; streamlining the build process and enhancing project maintainability.
+          </>,
+          <>
+          Developing Python scripts to generate comparison reports and metrics for citation recognition using Regex versus NLP
+          methods, facilitating evaluation for a potential transition to NLP-based approach for improved accuracy.
+          </>
+        ]}
+        skills={[
+          "Python",
+          "Java",
+          "XML",
+          "Ant",
+          "Gradle"
+        ]}
+        link="https://www.lexisnexis.com/en-us"
+      />
+
+      <ExperienceCard
         timeline="Dec 2023 - Current"
         role="Software Engineer"
         name="Moise A. Khayrallah Center (NCSU)"
         description={[
           <>
-            Enhanced user search experience by architecting an autocomplete
-            feature with Elasticsearch Completion Suggester, and efficiently
-            migrated{" "}
-            <span className="font-medium text-slate-200">
-              250,000 documents
-            </span>{" "}
-            to a new index using the Bulk API and Scroll method.
+          Actively migrating compute and storage resources from AWS to Jetstream2 (NSF-funded cloud platform) using {" "}<span className="font-medium text-slate-200">Bash</span>{" "}
+          scripts and {" "}<span className="font-medium text-slate-200">AWS CLI</span>, optimizing resource allocation and reducing operational costs.
           </>,
           <>
-            Developing an{" "}
-            <span className="font-medium text-slate-200">
-              Arabic-focused LLM
-            </span>{" "}
-            to introduce advanced features like article summarization and
-            interactive queries, aimed at enhancing user interaction and content
-            accessibility.
+          Improved search experience by implementing a search term autocomplete feature using {" "}<span className="font-medium text-slate-200">Elasticsearch</span>{" "} Completion
+          Suggester; in the process migrating and tokenizing 22 GB of documents with the Bulk API and Scroll method.
           </>,
           <>
-            Optimized document processing, reducing time per document from{" "}
-            <span className="font-bold text-teal-300">
-              1,440 to 28.8 minutes
-            </span>{" "}
-            by leveraging Celery and asynchronous processing.
+          Optimized document processing using a producer-consumer model with {" "}<span className="font-medium text-slate-200">Celery</span>{" "} and <span className="font-medium text-slate-200">Redis</span>, chunking tasks for
+          asynchronous execution by workers; reduced processing time per 180-page document from 30 to 10 minutes.
           </>,
           <>
-            Implemented{" "}
-            <span className="font-medium text-slate-200">ElasticSearch</span>{" "}
-            and integrated Google Analytics for enhanced text search and user
-            insights.
-          </>,
-          <>
-            Utilized <span className="font-medium text-slate-200">AWS</span>,
-            incorporating EC2 for computing and S3 for data storage, to
-            strengthen infrastructure scalability and reliability.
-          </>,
+          Leveraged AWS services, including <span className="font-medium text-slate-200">RDS</span> for PostgreSQL, <span className="font-medium text-slate-200">OpenSearch</span> for search, analytics, and text autocomplete, and
+          {" "}<span className="font-medium text-slate-200">S3</span> for document storage, to enhance infrastructure scalability and reliability.
+          </>
         ]}
         skills={[
           "ElasticSearch",
@@ -63,6 +75,7 @@ const Experience = () => {
           "RESTful API Web Services",
           "Celery",
           "AWS",
+          "Redis"
         ]}
         link="https://arabicsearch.org/home"
       />
@@ -73,41 +86,22 @@ const Experience = () => {
         name="JPMorgan Chase & Co."
         description={[
           <>
-            Designed and implemented a Notional service using Python Bottle
-            framework, serving{" "}
-            <span className="font-medium text-slate-200">seven</span> systems
-            and calculating critical intraday and end-of-the-day notional values
-            for approximately{" "}
-            <span className="font-medium text-slate-200">500K</span> daily
-            executed trades.
+          Engineered a Notional Calculation service using JPMC’s Athena framework (Python-based), integrating market data APIs
+          for real-time pricing; streamlined calculations across 7 systems, processing notional values for∼500,000 trades daily.
           </>,
           <>
-            Decoupled reg assessment from trade booking using{" "}
-            <span className="font-medium text-slate-200">
-              event-driven architecture
-            </span>
-            , eliminating single point of failures and time-outs due to
-            dependencies on external services which significantly improved
-            booking efficiency by{" "}
-            <span className="font-bold text-teal-300">80%</span>.
+          Decoupled regulatory assessment from trade booking using an <span className="font-bold text-teal-300">event-driven architecture</span> with <span className="font-medium text-slate-200">Apache Kafka</span>,
+          eliminating single points of failure and reducing time-outs, boosting trade booking efficiency.
+            {/* <span className="font-bold text-teal-300">80%</span>. */}
           </>,
           <>
-            Built Smart Reg - regulatory reporting framework using React Native,{" "}
-            <span className="font-bold text-teal-300">
-              reducing SDLC duration by 87%
-            </span>{" "}
-            for data quality changes and creating a scalable, configurable
-            platform for all jurisdictions, enabling quick onboarding of new
-            reports.
+          Developed ”Smart Reg,” a scalable regulatory reporting framework processing∼1.5 million trade events daily, fetched
+          from <span className="font-bold text-teal-300">Hydra</span> (NoSQL database). Implemented a configurable React.js frontend and automated report delivery via
+          {" "}<span className="font-medium text-slate-200">SFTP</span>, enabling rapid onboarding of new reports.
           </>,
           <>
-            Optimized trade booking workflow by implementing non-persistent
-            session-based TTL (time to live) caching for ’Can I Transact’ checks
-            executed during trade booking,{" "}
-            <span className="font-bold text-teal-300">
-              reducing booking time by 60%
-            </span>
-            .
+          Refactored ”Can I Transact” client code for improved modularity and implemented non-persistent, session-based TTL
+          (Time-to-Live) caching during trade booking for CIT checks, reducing processing time and enhancing system performance.
           </>,
         ]}
         skills={[
@@ -126,26 +120,12 @@ const Experience = () => {
         name="JPMorgan Chase & Co."
         description={[
           <>
-            Constructed an internal reconciliation system that generates and
-            transfers daily end-of-day reports for{" "}
-            <span className="font-medium text-slate-200">
-              1.5M trade life-cycle events
-            </span>
-            , ensuring accurate trade state and valuation data is available for
-            business continuity.
-          </>,
-          <>
-            Developed a{" "}
-            <span className="font-medium text-slate-200">REST API</span> based
-            client for the ’Can I Transact’ service, enabling pre-trade checks
-            and post-trade reporting checks for{" "}
-            <span className="font-medium text-slate-200">
-              Equities, FX, and Rates trades
-            </span>
-            .
+          Developed a <span className="font-bold text-teal-300">RESTful API</span> for pre-trade booking checks, effectively blocking OFAC-sanctioned trades based on
+          underlying instruments to enhance regulatory compliance. Implemented a React frontend for managing temporary block
+          overrides in exceptional cases, streamlining exception handling and improving operational efficiency.
           </>,
         ]}
-        skills={["Python", "Bottle", "RESTful API Web Services"]}
+        skills={["Python", "RESTful API Web Services"]}
       />
     </div>
   );

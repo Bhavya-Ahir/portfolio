@@ -35,7 +35,7 @@ const Experience = () => {
               North Carolina State University
             </h3>
             <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-              August 2023 - December 2024
+              August 2023 - May 2025
             </time>
             <p className="text-base italic font-normal text-gray-500 dark:text-gray-400">
               Master of Science in Computer Science | GPA: 4.0/4.0
